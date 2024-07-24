@@ -23,10 +23,12 @@ const output = useMemo(()=>{
 },[weight,height])
   return (
     <div className="App">
-      <h1>BMI CALCULATOR</h1>
-
-      <div>
-        <div>
+      <div className='parent'>
+      <div className='container'>
+        <div className='heading'>
+      <h1>Body mass index</h1>
+        </div>
+        <div className='child'>
           <p>Weight:{weight}kg</p>
           <input type="range" step="1" min="40" max="200" onChange={handleWeight} />
 
@@ -37,6 +39,7 @@ const output = useMemo(()=>{
         </div>
       </div>
 
+      </div>
     </div>
   );
 }

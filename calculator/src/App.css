@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.parent{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 50px;
+}
+
+.container{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 50%;
+  height: 440px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.container > .heading {
+  background-color: #2253c8;
+  padding: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+
+}
+
+.heading > h1 {
   color: white;
+  font-size: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.child > p {
+  font-size: 20px;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.child > input {
+  width: 140px;
+}
+
+
+@media (max-width: 768px) {
+  
+  .parent{
+  
   }
-  to {
-    transform: rotate(360deg);
+  
+  .container{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 80%;
+    height: 440px;
+    text-align: center;
+    border-radius: 30px;
   }
+  
+
+  
+  .heading > h1 {
+    color: white;
+    font-size:20px;
+  }
+  
+  .child > p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .child > input {
+    width: 140px;
+  }
+
 }
